@@ -157,7 +157,7 @@ error_reporting(0);
         <div class="container-fluid">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-                $service_url = "http://35.167.201.119/districtandcrime/?district=" . $district . "&hour=" . $hour . "";
+                $service_url = "http://52.35.144.92/districtandcrime/?district=" . $district . "&hour=" . $hour . "";
                 $curl = curl_init($service_url);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
                 $curl_response = curl_exec($curl);
@@ -225,7 +225,7 @@ error_reporting(0);
         <div class="container-fluid">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'GET' and ! empty($_GET['timedateatdristict'])) {
-                $service_url = "http://35.167.201.119/timedateatdistrict/?district=" . $district1 . "&psa=" . $pas . "";
+                $service_url = "http://52.35.144.92/timedateatdistrict/?district=" . $district1 . "&psa=" . $pas . "";
                 $curl = curl_init($service_url);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
                 $curl_response = curl_exec($curl);
@@ -283,8 +283,8 @@ error_reporting(0);
         <div class="container-fluid">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-                //$service_url = "http://35.167.201.119/particulartimecrime/?category=Thefts&block=2800 BLOCK W LEHIGH AVE";
-                $service_url = str_replace(' ', '%20', "http://35.167.201.119/particulartimecrime/?category=" . $category . "&block=" . $block . "");
+                //$service_url = "http://52.35.144.92/particulartimecrime/?category=Thefts&block=2800 BLOCK W LEHIGH AVE";
+                $service_url = str_replace(' ', '%20', "http://52.35.144.92/particulartimecrime/?category=" . $category . "&block=" . $block . "");
 
                 $curl = curl_init($service_url);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -343,8 +343,8 @@ error_reporting(0);
         <div class="container-fluid">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-                //$service_url = "http://35.167.201.119/particulartimecrime/?category=Thefts&block=2800 BLOCK W LEHIGH AVE";
-                $service_url = str_replace(' ', '%20', "http://35.167.201.119/countcrime/?hour=" . $hour1 . "&block=" . $block1 . "&date=" . $date1 . "");
+                //$service_url = "http://52.35.144.92/particulartimecrime/?category=Thefts&block=2800 BLOCK W LEHIGH AVE";
+                $service_url = str_replace(' ', '%20', "http://52.35.144.92/countcrime/?hour=" . $hour1 . "&block=" . $block1 . "&date=" . $date1 . "");
 
                 $curl = curl_init($service_url);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
